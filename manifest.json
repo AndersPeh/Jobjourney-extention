@@ -34,13 +34,15 @@
         "https://*.indeed.com/*",
         "https://*.reed.co.uk/*",
         "https://*.workopolis.com/*",
-        "https://*.jobjourney.me/*"
+        "https://*.jobjourney.me/*",
+        "https://my.jobstreet.com/*"
       ],
       "js": [
         "helpers/jobScrapers.js",
         "content.js",
         "helpers/linkedinScraper.js",
         "helpers/seekScraper.js",
+        "helpers/jobstreetScraper.js",
         "helpers/indeedScraper.js"
       ]
     }
