@@ -270,7 +270,7 @@ function createJobSearchUrls(searchTerm, location, platformFilter = null) {
   if (location.includes("Malaysia")) {
     sites.push({
       id: "jobstreet",
-      url: `https://my.jobstreet.com/${jobstreetSearchTerm}-jobs`,
+      url: `https://my.jobstreet.com/${seekSearchTerm}-jobs`,
       platform: "JobStreet",
       action: "scrapeJobStreet",
     });

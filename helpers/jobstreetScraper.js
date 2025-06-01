@@ -173,8 +173,8 @@ const jobstreetScraper = {
 
     const waitForJobDetailsPanel = async () => {
       let attempts = 0;
-      const maxAttempts = 20;
-      let waitTime = 200;
+      const maxAttempts = 15;
+      let waitTime = 150;
 
       while (attempts < maxAttempts) {
         // CRITICAL: VERIFY these selectors on live site.
@@ -324,7 +324,7 @@ const jobstreetScraper = {
             jobs.push(Job.createFromJobStreet(basicInfo));
         }
 
-        const delayBetweenClicks = 700; // Increased slightly for stability
+        const delayBetweenClicks = 300; // Increased slightly for stability
         console.log(`Waiting ${delayBetweenClicks}ms before next job click...`);
         await new Promise((r) => setTimeout(r, delayBetweenClicks));
       } catch (error) {
